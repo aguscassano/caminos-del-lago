@@ -39,6 +39,7 @@ header .navbar {
   background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente */
 }
 header .navbar .navbar-nav {
+  margin-top: 40px;
   margin-right: 210px;
   background-color: rgba(245, 245, 220, 0.589); /* Fondo claro solo para los enlaces */
   border-radius: 50px; /* Bordes redondeados para el fondo de los enlaces */
@@ -216,6 +217,7 @@ main .servicios .carousel-thumbnail:hover {
 main .servicios #carouselExample {
   width: 100%;
   border-radius: 50px; /* Borde redondeado para el carrusel */
+  overflow: hidden;
 }
 main .servicios .carousel-control-prev, main .servicios .carousel-control-next {
   z-index: 3; /* Asegura que los controles del carrusel estén encima */
