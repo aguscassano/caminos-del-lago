@@ -134,7 +134,7 @@ main {
         #carouselExample {
             width: 100%;
             border-radius: 50px; /* Borde redondeado para el carrusel */
-            overflow: hidden;
+            //overflow: hidden;
         }
         
           /* Controles del carrusel */
@@ -247,7 +247,7 @@ main {
         }
     }
     .reserva {
-        position: relative; /* Asegúrate de que el contenedor tenga position: relative */
+        //position: relative; /* Asegúrate de que el contenedor tenga position: relative */
         width: 100%;
         height: 100vh;
         background-image: url('./media/Mesad555etrabajo5@72x-100.jpg');
