@@ -1,0 +1,90 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Para asegurarte que el header quede encima */
+    .carousel1 {
+        margin-top: 0; /* Asegúrate de que el carrusel no tenga margen */
+        height: 100vh; /* Ocupa el 100% de la altura del viewport */
+        max-height: 100vh; /* Asegura que no se pase */
+    }
+    
+    .carousel-item1 img {
+        height: 100vh; /* Ocupa el alto de la ventana */
+        object-fit: cover; /* Para cubrir el espacio */
+    }
+    .navbar {
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente */
+        .navbar-nav {
+            margin-right: 210px;
+            background-color: rgba(245, 245, 220, 0.589); /* Fondo claro solo para los enlaces */
+            border-radius: 50px; /* Bordes redondeados para el fondo de los enlaces */
+            padding: 5px 20px; /* Ajusta el relleno de los enlaces */
+            display: flex;
+            gap: 10px; /* Espaciado entre los enlaces */
+            height: 36px;
+            align-items: center;
+
+        }
+        .nav-link {
+            font-family: 'Noto Sans', sans-serif;
+            color: #f5e8d1; /* Color oscuro para el texto */
+            font-weight: bold; /* Hacer el texto más destacado */
+            &:hover {
+                color: #005041; /* Color de hover */
+            }
+        }
+    }
+
+    .logo_contenedor {
+        background-color: #005041; /* Color verde oscuro */
+        color: #ffffff; /* Color del texto */
+        width: 120px; /* Ancho del contenedor */
+        height: 140px; /* Alto del contenedor */
+        display: flex; /* Activa Flexbox */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        border-top-left-radius: 0; /* Esquina superior izquierda recta */
+        border-top-right-radius: 0; /* Esquina superior derecha recta */
+        border-bottom-left-radius: 60px; /* Redondear esquina inferior izquierda */
+        border-bottom-right-radius: 60px; /* Redondear esquina inferior derecha */
+        overflow: hidden; /* Elimina cualquier desborde */
+        margin-left: 160px;
+        margin-top: 0;
+        padding-top: 0;
+        top: 0;
+
+        img {
+            display: block; /* Elimina espacios extras de la imagen */
+            max-width: 100%; /* Evita que sobresalga */
+            max-height: 100%; /* Ajusta la altura máxima */
+            object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+            margin: 0; /* Asegura que no haya márgenes */
+            padding: 0;
+            margin-left: 15px;
+            width: 90px;
+        }
+    }
+
+    .contenedor_nav {
+        display: flex;
+        align-content: end;
+        width: 120px;
+        height: auto;
+        background-color: beige;
+        justify-content: end;
+
+    }
+    
+    
+
+    
+}
+
+footer{
+    background-color: #005041;
+    height: 120px;
+}
+

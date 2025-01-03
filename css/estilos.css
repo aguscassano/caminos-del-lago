@@ -1,0 +1,513 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura el tamaño correcto de los elementos */
+}
+
+body {
+  background-color: #f7e6cb;
+  overflow-x: hidden;
+}
+body html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body p {
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Para asegurarte que el header quede encima */
+}
+header .carousel1 {
+  margin-top: 0; /* Asegúrate de que el carrusel no tenga margen */
+  height: 100vh; /* Ocupa el 100% de la altura del viewport */
+  max-height: 100vh; /* Asegura que no se pase */
+}
+header .carousel-item1 img {
+  height: 100vh; /* Ocupa el alto de la ventana */
+  object-fit: cover; /* Para cubrir el espacio */
+}
+header .navbar {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente */
+}
+header .navbar .navbar-nav {
+  margin-right: 210px;
+  background-color: rgba(245, 245, 220, 0.589); /* Fondo claro solo para los enlaces */
+  border-radius: 50px; /* Bordes redondeados para el fondo de los enlaces */
+  padding: 5px 20px; /* Ajusta el relleno de los enlaces */
+  display: flex;
+  gap: 10px; /* Espaciado entre los enlaces */
+  height: 36px;
+  align-items: center;
+}
+header .navbar .nav-link {
+  font-family: "Noto Sans", sans-serif;
+  color: #f5e8d1; /* Color oscuro para el texto */
+  font-weight: bold; /* Hacer el texto más destacado */
+}
+header .navbar .nav-link:hover {
+  color: #005041; /* Color de hover */
+}
+header .logo_contenedor {
+  background-color: #005041; /* Color verde oscuro */
+  color: #ffffff; /* Color del texto */
+  width: 120px; /* Ancho del contenedor */
+  height: 140px; /* Alto del contenedor */
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  border-top-left-radius: 0; /* Esquina superior izquierda recta */
+  border-top-right-radius: 0; /* Esquina superior derecha recta */
+  border-bottom-left-radius: 60px; /* Redondear esquina inferior izquierda */
+  border-bottom-right-radius: 60px; /* Redondear esquina inferior derecha */
+  overflow: hidden; /* Elimina cualquier desborde */
+  margin-left: 160px;
+  margin-top: 0;
+  padding-top: 0;
+  top: 0;
+}
+header .logo_contenedor img {
+  display: block; /* Elimina espacios extras de la imagen */
+  max-width: 100%; /* Evita que sobresalga */
+  max-height: 100%; /* Ajusta la altura máxima */
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+  margin: 0; /* Asegura que no haya márgenes */
+  padding: 0;
+  margin-left: 15px;
+  width: 90px;
+}
+header .contenedor_nav {
+  display: flex;
+  align-content: end;
+  width: 120px;
+  height: auto;
+  background-color: beige;
+  justify-content: end;
+}
+
+footer {
+  background-color: #005041;
+  height: 120px;
+}
+
+#mainCarousel {
+  position: relative; /* Necesario para que el título se posicione sobre el carrusel */
+}
+
+main .montanas-fijas {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 5; /* Asegura que esté debajo del título pero encima del fondo */
+}
+main .montanas-fijas img {
+  width: 100%; /* Ocupa todo el ancho */
+  height: auto; /* Mantiene las proporciones */
+  display: block;
+  pointer-events: none; /* La imagen no interfiere con clics */
+  background-color: transparent;
+}
+main div .contenedor_titulo h1 {
+  position: absolute; /* Posiciona el título sobre las imágenes */
+  color: #f5e8d1; /* Color principal */
+  font-size: 40px; /* Tamaño de la fuente */
+  text-align: left;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0); /* Sin fondo */
+  padding: 0;
+  border-radius: 10px;
+  margin-left: 160px;
+  top: 150px;
+  width: 80%;
+  word-wrap: break-word;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: bold;
+}
+main div .contenedor_titulo .carousel-subtitle {
+  position: absolute;
+  font-family: "Merriweather", sans-serif;
+  top: 350px; /* Ajusta la posición debajo del h1 */
+  margin-left: 160px;
+  color: #005041;
+  font-size: 1.1rem;
+  font-weight: bold; /* Peso semi-bold */
+  z-index: 10;
+  background-color: #f5e8d1;
+  border-radius: 50px;
+  padding: 10px;
+}
+main div .contenedor_titulo .info-detalles {
+  position: absolute;
+  top: 425px; /* Ajusta la posición */
+  margin-left: 160px;
+  display: flex;
+  gap: 40px;
+  z-index: 10;
+  font-family: "Noto Sans", sans-serif;
+}
+main div .contenedor_titulo .info-detalles .info-item {
+  color: #f5e8d1;
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+main div .contenedor_titulo .info-detalles .info-item .info-title {
+  color: #e85a2b; /* Color naranja */
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+main div .contenedor_titulo .info-detalles .info-item .highlight {
+  font-weight: bold;
+  color: #f5e8d1; /* Mantiene el mismo color */
+}
+main div .contenedor_titulo .info-detalles .linea-separadora {
+  width: 2px; /* Ancho de la línea */
+  height: 65px; /* Altura de la línea */
+  background-color: #e85a2b; /* Color naranja */
+}
+main .servicios {
+  margin-top: 100px;
+  display: flex;
+  /* Estilo para las miniaturas (previsualización de las imágenes) */
+  /* Efecto de agrandado al pasar el ratón */
+  /* Estilo del carrusel */
+  /* Controles del carrusel */
+}
+main .servicios .carousel-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: 210px;
+}
+main .servicios .carousel-thumbnails {
+  position: absolute;
+  bottom: 0; /* Eleva las miniaturas sobre el carrusel */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2; /* Las miniaturas deben estar encima del carrusel */
+  padding-bottom: 10px;
+}
+main .servicios .carousel-thumbnail {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+main .servicios .carousel-thumbnail:hover {
+  transform: scale(1.1);
+}
+main .servicios #carouselExample {
+  width: 100%;
+  border-radius: 50px; /* Borde redondeado para el carrusel */
+  overflow: hidden;
+}
+main .servicios .carousel-control-prev, main .servicios .carousel-control-next {
+  z-index: 3; /* Asegura que los controles del carrusel estén encima */
+}
+main .servicios .servicios-txt {
+  margin-left: 210px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+}
+main .servicios .servicios-txt .serv {
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+}
+main .servicios .servicios-txt .serv img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  padding: 0;
+}
+main .servicios .servicios-txt p {
+  margin-top: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #005041;
+}
+main .servicios .servicios-txt h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: #005041;
+}
+main .servicios .servicios-txt .highlight {
+  font-weight: bold;
+}
+main .servicios .servicios-txt .linea-separadora1 {
+  width: 425px; /* Ancho de la línea */
+  height: 1px; /* Altura de la línea */
+  background-color: #e85a2b;
+  margin-top: 53px;
+}
+main .ubicacion {
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+main .ubicacion .ubi-iz {
+  margin-left: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .ubicacion .ubi-iz h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: #005041;
+  align-self: flex-start;
+}
+main .ubicacion .ubi-iz p {
+  margin-top: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #005041;
+}
+main .ubicacion .ubi-iz h3 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 33px;
+  font-family: "Merriweather", sans-serif;
+  text-align: center;
+  color: #e85a2b;
+}
+main .ubicacion .ubi-iz h4 {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: #005041;
+}
+main .ubicacion .ubi-iz .qr {
+  margin-top: 20px;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+}
+main .ubicacion .ubi-iz .linea-separadora1 {
+  width: 425px; /* Ancho de la línea */
+  height: 1px; /* Altura de la línea */
+  background-color: #e85a2b;
+  margin-top: 53px;
+}
+main .ubicacion .ubi-de .mapa {
+  margin-right: 210px;
+  border-radius: 50px;
+}
+main .ubicacion .ubi-de .mapa iframe {
+  border-radius: 50px;
+}
+main .reserva {
+  position: relative; /* Asegúrate de que el contenedor tenga position: relative */
+  width: 100%;
+  height: 100vh;
+  background-image: url("./media/Mesad555etrabajo5@72x-100.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .reserva .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+main .reserva .card-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+main .reserva .card {
+  position: relative; /* Asegúrate de que el contenedor de la tarjeta tenga position: relative */
+  width: 300px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .reserva .card .card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+main .reserva .card .card-btn {
+  border: none;
+  background-color: black;
+  position: absolute;
+  bottom: 40px;
+  left: 35%;
+  margin-top: 10px;
+}
+main .reserva .card .card-btn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  header {
+    z-index: 1;
+  }
+  header .logo_contenedor {
+    margin-left: 20px;
+    width: 80px; /* Ancho del contenedor */
+    height: 80px;
+  }
+  header .logo_contenedor img {
+    margin-left: 10px;
+  }
+  main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  main section.reserva {
+    height: 150vh;
+    background-size: 2000px;
+    top: 100px;
+  }
+  main section.reserva .content {
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+  }
+  main section.reserva .card {
+    width: 230px;
+    margin-top: 0;
+    top: 0;
+  }
+  main section.reserva .card .card-btn {
+    left: 31%;
+  }
+  main section.reserva .card-cont {
+    margin-top: 20px;
+  }
+  main div .montanas-fijas {
+    bottom: -1px;
+  }
+  main div .contenedor_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main div .contenedor_titulo h1.titulo {
+    margin-top: 25px;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #e85a2b;
+  }
+  main div .contenedor_titulo .carousel-subtitle {
+    margin-left: 0;
+    top: 260px;
+  }
+  main div .contenedor_titulo .info-detalles {
+    text-align: center;
+    margin-left: 0;
+    flex-direction: column;
+    top: 330px;
+    gap: 10px;
+    padding: 0px;
+    width: 100%;
+  }
+  main div .contenedor_titulo .info-detalles .info-item {
+    color: black;
+  }
+  main div .contenedor_titulo .info-detalles .info-item .highlight {
+    color: black;
+  }
+  main div .contenedor_titulo .info-detalles .linea-separadora {
+    align-self: center;
+    width: 80%; /* Ancho de la línea */
+    height: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  main .servicios {
+    padding: 0;
+    margin: auto;
+    margin-top: 490px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  main .servicios .servicios-txt {
+    margin-left: 0px;
+    height: auto;
+    width: 90%;
+    text-align: center;
+  }
+  main .servicios .servicios-txt .serv {
+    height: auto;
+    width: 90%;
+    margin-left: 0px;
+    margin: auto;
+  }
+  main .servicios .servicios-txt .linea-separadora1 {
+    width: 100%; /* Ancho de la línea */
+    height: 1px; /* Altura de la línea */
+    background-color: #e85a2b;
+    margin-top: 3px;
+  }
+  main .servicios .carousel-container {
+    width: 90%;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    top: 80px;
+  }
+  main .servicios .carousel-thumbnail {
+    width: 90px;
+    height: 90px;
+  }
+  main .ubicacion {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+  }
+  main .ubicacion .ubi-iz {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+  }
+  main .ubicacion .ubi-de {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+  }
+  main .ubicacion .ubi-de .mapa {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  main .ubicacion .ubi-de .mapa .mapit {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

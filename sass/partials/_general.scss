@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura el tamaño correcto de los elementos */
+}
+
+body {
+    background-color: #f7e6cb;
+    overflow-x: hidden;
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+        
+    }
+    p {
+        font-family: 'Noto Sans', sans-serif
+    }
+}
