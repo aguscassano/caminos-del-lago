@@ -50,7 +50,7 @@ header {
         border-top-right-radius: 0; /* Esquina superior derecha recta */
         border-bottom-left-radius: 60px; /* Redondear esquina inferior izquierda */
         border-bottom-right-radius: 60px; /* Redondear esquina inferior derecha */
-        overflow: hidden; /* Elimina cualquier desborde */
+        //overflow: hidden; /* Elimina cualquier desborde */
         margin-left: 160px;
         margin-top: 0;
         padding-top: 0;
@@ -85,6 +85,8 @@ header {
 
 footer{
     background-color: #005041;
-    height: 120px;
+    height: 150px;
+    margin-top: 0;
+    top: 0;
 }
 

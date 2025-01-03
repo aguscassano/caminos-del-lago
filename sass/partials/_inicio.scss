@@ -254,6 +254,9 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        margin-bottom: 0;
+        bottom: 0;
+        background-color: #005041;
 
         .content {
             display: flex;
@@ -270,7 +273,7 @@ main {
         }
     
         .card {
-            position: relative; /* Asegúrate de que el contenedor de la tarjeta tenga position: relative */
+            //position: relative; /* Asegúrate de que el contenedor de la tarjeta tenga position: relative */
             width: 300px;
             border-radius: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
