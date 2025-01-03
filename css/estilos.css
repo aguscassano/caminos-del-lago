@@ -68,11 +68,11 @@ header .logo_contenedor {
   border-top-right-radius: 0; /* Esquina superior derecha recta */
   border-bottom-left-radius: 60px; /* Redondear esquina inferior izquierda */
   border-bottom-right-radius: 60px; /* Redondear esquina inferior derecha */
-  overflow: hidden; /* Elimina cualquier desborde */
   margin-left: 160px;
   margin-top: 0;
   padding-top: 0;
   top: 0;
+  position: absolute;
 }
 header .logo_contenedor img {
   display: block; /* Elimina espacios extras de la imagen */
@@ -95,7 +95,9 @@ header .contenedor_nav {
 
 footer {
   background-color: #005041;
-  height: 120px;
+  height: 150px;
+  margin-top: 0;
+  top: 0;
 }
 
 #mainCarousel {
@@ -214,7 +216,6 @@ main .servicios .carousel-thumbnail:hover {
 main .servicios #carouselExample {
   width: 100%;
   border-radius: 50px; /* Borde redondeado para el carrusel */
-  overflow: hidden;
 }
 main .servicios .carousel-control-prev, main .servicios .carousel-control-next {
   z-index: 3; /* Asegura que los controles del carrusel estén encima */
@@ -318,13 +319,15 @@ main .ubicacion .ubi-de .mapa iframe {
   border-radius: 50px;
 }
 main .reserva {
-  position: relative; /* Asegúrate de que el contenedor tenga position: relative */
   width: 100%;
   height: 100vh;
-  background-image: url("./media/Mesad555etrabajo5@72x-100.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-bottom: 0;
+  bottom: 0;
+  background-color: #005041;
+  height: 2000px;
+  padding: 0;
+  width: auto;
+  height: 800px;
 }
 main .reserva .content {
   display: flex;
@@ -336,10 +339,9 @@ main .reserva .card-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 0px;
 }
 main .reserva .card {
-  position: relative; /* Asegúrate de que el contenedor de la tarjeta tenga position: relative */
   width: 300px;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -382,20 +384,21 @@ main .reserva .card .card-btn:hover {
   main section.reserva {
     height: 150vh;
     background-size: 2000px;
-    top: 100px;
+    top: 150px;
+    height: 1200px;
   }
   main section.reserva .content {
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-around;
     padding: 0;
   }
   main section.reserva .card {
-    width: 230px;
+    width: 300px;
     margin-top: 0;
     top: 0;
   }
   main section.reserva .card .card-btn {
-    left: 31%;
+    left: 35%;
   }
   main section.reserva .card-cont {
     margin-top: 20px;

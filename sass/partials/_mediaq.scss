@@ -21,19 +21,19 @@
         section.reserva{
             height: 150vh;
             background-size: 2000px;
-            top: 100px;
+            top: 150px;
             height: 1200px;
             .content{
                 flex-direction: column;
-                justify-content: start;
+                justify-content: space-around;
                 padding: 0;
             }
             .card{
-                width: 230px;
+                width: 300px;
                 margin-top: 0;
                 top: 0;
                 .card-btn{
-                    left: 31%;
+                    left: 35%;
                 }
             }
             .card-cont {

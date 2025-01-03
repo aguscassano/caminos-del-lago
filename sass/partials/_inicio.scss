@@ -250,14 +250,13 @@ main {
         //position: relative; /* Asegúrate de que el contenedor tenga position: relative */
         width: 100%;
         height: 100vh;
-        background-image: url('./media/Mesad555etrabajo5@72x-100.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         margin-bottom: 0;
         bottom: 0;
         background-color: #005041;
-
+        height: 2000px;
+        padding: 0;
+        width: auto; 
+        height: 800px;
         .content {
             display: flex;
             justify-content: space-evenly;
@@ -269,7 +268,7 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 150px;
+            margin-top: 0px;
         }
     
         .card {
