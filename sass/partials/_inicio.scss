@@ -53,6 +53,8 @@ main {
                 background-color: #f5e8d1;
                 border-radius: 50px;
                 padding: 10px;
+                text-decoration: none;
+                
             }
 
             .info-detalles {
@@ -146,12 +148,14 @@ main {
             margin-left: 210px;
             display: flex;
             flex-direction: column;
-            width: 300px;
-            height: 300px;
+            width: 450px;
+            height: 350px;
             .serv{
-                width: 300px;
-                height: 300px;
+                width: 280px;
+                height: 280px;
                 margin-left: 50px;
+                margin-top: 0;
+                
                 img {
                     width: 300px;
                     height: 300px;
