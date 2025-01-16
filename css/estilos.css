@@ -515,6 +515,13 @@ main .reserva .card .card-btn:hover {
     margin-left: 0;
     margin-right: 0;
     width: 90%;
+    justify-items: center;
+  }
+  main .ubicacion .ubi-iz h2 {
+    align-self: center;
+  }
+  main .ubicacion .ubi-iz p {
+    text-align: center;
   }
   main .ubicacion .ubi-de {
     width: 100%;
